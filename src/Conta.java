@@ -12,7 +12,7 @@ public class Conta {
         if(valorParaDeposito <= 0){
             retorno = new String[]{"false", "Valor de deposito inválido!"};
         } else {
-            this.saldo = valorParaDeposito;
+            this.saldo += valorParaDeposito;
             retorno = new String[]{"true","Deposito realizado com sucesso!"};
         }
         return retorno;
